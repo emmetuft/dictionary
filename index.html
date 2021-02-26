@@ -3,12 +3,45 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://kit.fontawesome.com/5a3e42470b.js" crossorigin="anonymous"></script>
     <title>Dictionary API</title>
 
-    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
+    <div class="header">
+        <i class="fas fa-book"></i>
+        <div>
+            Dictionemme
+        </div>
+    </div>
+
+    <form>
+        <div class="search-container">
+            <div class="search-item">
+                <input id="wordInput" type="text" class="searchTerm" placeholder="Search for a word">
+                <button id="wordSubmit" type="submit" value="Submit" class="search-button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="results-container">
+        <div id="antonyms"></div>
+        <div id="synonyms"></div>
+        <div id="search-results"></div>
+        <div id="rhymes"></div>
+    </div>
+
+    <div class="footer">
+        <a href="github.com">GitHub</a>
+    </div>
 
 <script text="type/javascript" src="/script.js"></script>
 </body>

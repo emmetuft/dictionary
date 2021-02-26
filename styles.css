@@ -69,6 +69,15 @@ a {
     height: 44px;
 }
 
+#main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    font-size: 60px;
+    color: #17252A;
+}
+
 .results-container {
     display: flex;
     justify-content: center;

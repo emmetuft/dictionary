@@ -6,6 +6,9 @@ document.getElementById("wordSubmit").addEventListener("click", function(event) 
     if (value === "")
         return;
 
+    var main_text = document.getElementById("main-text");
+    main_text.style.display = "none";
+
     let url = "https://owlbot.info/api/v4/dictionary/" + value;
     let params = {
         method: 'GET',
@@ -17,6 +20,7 @@ document.getElementById("wordSubmit").addEventListener("click", function(event) 
       .then(function(response) {
         return response.json();
       }).then(function(json) {
+        console.log(json);
         let results = "";
 
         if (json.word) {
